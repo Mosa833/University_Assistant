@@ -50,12 +50,12 @@ A Retrieval-Augmented Generation (RAG) application designed to assist university
 
 1. Start the FastAPI backend server:
    ```
-   uvicorn main:app --reload
+   uv uvicorn main:app --reload
    ```
 
 2. In a separate terminal, start the Streamlit frontend:
    ```
-   streamlit run streamlit_app.py
+   uv streamlit run streamlit_app.py
    ```
 
 3. Open your browser and navigate to the Streamlit app (usually `http://localhost:8501`).
