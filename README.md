@@ -33,18 +33,6 @@ A Retrieval-Augmented Generation (RAG) application designed to assist university
    uv pip install -e .
    ```
 
-## ⚙️ Setup
-
-1. Create a `.env` file in the root directory and add your OpenAI API key:
-   ```
-   OPENAI_API_KEY=your_openai_api_key_here
-   ```
-
-2. Start a local Qdrant instance. You can run Qdrant using Docker:
-   ```
-   docker run -p 6333:6333 -p 6334:6334 -v $(pwd)/qdrant_storage:/qdrant/storage qdrant/qdrant
-   ```
-   This will use the local `qdrant_storage` directory for persistence.
 
 ## 🚀 Running the Application
 
