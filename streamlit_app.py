@@ -46,9 +46,9 @@ uploaded = st.file_uploader("Choose a PDF", type=["pdf"], accept_multiple_files=
 if uploaded is not None:
     with st.spinner("Uploading and triggering ingestion..."):
         path = save_uploaded_pdf(uploaded)
-        # Kick off the event and block until the send completes
+        # Kick off the event and block until the send completes 
         asyncio.run(send_rag_ingest_event(path))
-        # Small pause for user feedback continuity
+        # Small pause for user feedback continuity 
         time.sleep(0.3)
     st.success(f"Triggered ingestion for: {path.name}")
     st.caption("You can upload another PDF if you like.")
