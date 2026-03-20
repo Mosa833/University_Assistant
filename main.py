@@ -49,7 +49,7 @@ async def rag_ingest_pdf(ctx: inngest.Context):
     chunks_and_src = await ctx.step.run("load-and-chunk", lambda: _load(ctx), output_type=RAGChunkAndSRC)
     ingested = await ctx.step.run("embed-and-upsert", lambda: _upsert(chunks_and_src), output_type=RAGUpsertResult)
 
-    return ingested.model_dump() # takes pydantic model converts em into python dictionary  or JSON
+    return ingested.model_dump() ## takes pydantic model converts em into python dictionary  or JSON
 
 
 @inngest_client.create_function(
